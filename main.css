@@ -1,0 +1,1354 @@
+* {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #206fc0;
+}
+
+.main-wrapper {
+    background-color: #efefef;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    padding-bottom: 75px;
+}
+
+.const-width {
+    max-width: 1230px;
+    margin: auto;
+}
+
+.white {
+    background-color: white;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.grayed {
+    color: #919191;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+
+
+/********** Fonts **********/
+@font-face {
+    font-family: ceraproBlack;
+    src: url(assets/Webfonts/cerapro_black_cyrillic/cerapro-black-webfont.ttf);
+}
+
+@font-face {
+    font-family: ceraproBlackItalic;
+    src: url(assets/Webfonts/cerapro_blackitalic_cyrillic/cerapro-blackitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: ceraproBold;
+    src: url(assets/Webfonts/cerapro_bold_cyrillic/cerapro-bold-webfont.ttf);
+}
+
+@font-face {
+    font-family: ceraproBoldItalic;
+    src: url(assets/Webfonts/cerapro_bolditalic_cyrillic/cerapro-bolditalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: ceraproMedium;
+    src: url(assets/Webfonts/cerapro_medium_cyrillic/cerapro-medium-webfont.ttf);
+}
+
+@font-face {
+    font-family: ceraproRegular;
+    src: url(assets/Webfonts/cerapro_regular_cyrillic/cerapro-regular-webfont.ttf);
+}
+
+/********** NavBar **********/
+
+.header-nav {
+    max-width: 1070px;
+    margin: auto;
+}
+
+.navbar-brand {
+    background: no-repeat url('assets/logo.png');
+    width: 135px;
+    height: 43px;
+    margin-left:  30px;
+    margin-top:    6px;
+    margin-bottom: 6px;
+}
+
+.navbar-right li {
+    text-align: center;
+    font-family: ceraproBold;
+}
+
+/********** Icons **********/
+
+.icons li:first-child {
+    margin: 0;
+}
+
+.icons li {
+    margin-left: 50px;
+}
+
+.icon {
+    width:  18px;
+    height: 23px;
+
+    display: inline-block;
+
+    margin-right: 10px;
+}
+
+.women-icon {
+    background: no-repeat bottom url('assets/symbols/female-gender.png');
+}
+
+.men-icon {
+    background: no-repeat bottom url('assets/symbols/male-gender.png');
+}
+
+.create-icon {
+    background: no-repeat bottom url('assets/symbols/create-copy.png');
+}
+
+.whishlist-icon {
+    background: no-repeat bottom url('assets/symbols/commerce.png');
+}
+
+.login-icon {
+    background: no-repeat bottom url('assets/symbols/user.png');
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    border-radius: 1px;
+}
+
+/********** AnotherNav **********/
+
+.another-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.another-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    width: 100%;
+    height: 60px;
+
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.options a {
+    padding: 15px 0;
+    line-height: 35px;
+
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s 0s ease-in-out;
+
+    font-family: ceraproMedium;
+}
+
+.options a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #efefef;
+}
+
+.search-btn {
+    width:  60px;
+    height: 60px;
+}
+
+.search-icon {
+    background: no-repeat center url('assets/symbols/search.png');
+    width:  45px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.search-icon:hover {
+    background-color: #efefef;
+}
+
+/********** Banner-1 **********/
+
+.first-banner {
+    height: 478px;
+    background: no-repeat center url('assets/shop-style-bg.png');
+    background-size: cover;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.first-banner h2 {
+    margin-top: 135px;
+    margin-bottom: 25px;
+
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: ceraproBlack;
+}
+
+.first-banner p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+
+    max-width: 525px;
+    margin: auto;
+}
+
+.btn-check-catalog {
+    width:  220px;
+    height: 50px;
+
+    border: 2px solid white;
+
+    text-align: center;
+    line-height: 48px;
+    color: white;
+    font-family: ceraproBold;
+
+    margin: 50px auto;
+}
+
+.btn-check-catalog:hover {
+    border-color: #f8f00b;
+    color:        #f8f00b;
+}
+
+.carousel-options {
+    display: flex;
+
+    width: 100%;
+
+    padding-top: 25px;
+
+    margin: auto;
+
+    justify-content: space-around;
+
+    position: absolute;
+
+    bottom: 13px;
+
+    font-family: ceraproBold;
+}
+
+.carousel-options .active {
+    color: #f8f00b;
+}
+
+.carousel-options a {
+    color: white;
+}
+
+.carousel-options a:hover {
+    color: #f8f00b;
+    text-decoration: none;
+}
+
+.first-banner .progress {
+    background: none;
+    border:     none;
+    box-shadow: none;
+
+    height: 13px;
+
+    border-radius: 0;
+
+    position: absolute;
+    width: 100%;
+
+    bottom: 0;
+
+    margin-left: -15px;
+    margin-bottom: 0;
+}
+
+.first-banner .progress-bar {
+    width: 50%;
+    background-color: #f8f00b;
+    height: 5px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+/********** Banner-2 **********/
+
+.second-banner {
+    overflow: hidden;
+    padding: 0;
+}
+
+.header-box {
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+    padding: 1px 0;
+    font-family: ceraproRegular;
+}
+
+.header-box h2 {
+    margin-bottom: 25px;
+}
+
+.header-box .btns-wrapper {
+    display: flex;
+
+    position: absolute;
+    right:  0;
+    top:    15px;
+
+    text-transform: uppercase;
+}
+
+.btns-wrapper .btn-all-sets {
+    border: 2px solid #206fc0;
+    padding: 10px 33px;
+    color: #206fc0;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.btns-wrapper .btn-all-sets:hover {
+    background-color: #206fc0;
+    color: white;
+}
+
+.btns-wrapper .btn-create-set {
+    border: 2px solid #206fc0;
+    background-color: #206fc0;
+    padding: 10px 20px;
+    color: white;
+    margin-left: 15px;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.btns-wrapper .btn-create-set:hover {
+    background: none;
+    color: #206fc0;
+}
+
+/***** actual banner *****/
+
+.pictures-set {
+    padding: 25px 0;
+}
+
+.picture-cell {
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    height:    450px;
+    max-width: 285px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.picture-cell h4 {
+    margin-bottom: 1px;
+    margin-top: 0;
+
+    font-family: ceraproMedium;
+}
+
+.picture-cell p {
+    position: relative;
+    font-family: ceraproRegular;
+
+}
+
+.img-wrapper {
+    height: 270px;
+}
+
+.picture-cell img {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+.picture-cell span {
+    position: absolute;
+    right: 0;
+    color: white;
+
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    width:  55px;
+    height: 20px;
+
+    font-family: ceraproRegular;
+
+}
+
+.picture-cell .btn-rounded {
+    border: 2px solid #206fc0;
+    color: #206fc0;
+
+    margin: 15px auto;
+
+    line-height: 27px;
+
+    width: 114px;
+    height: 30px;
+
+    font-family: ceraproBold;
+}
+
+.picture-cell .btn-rounded:hover {
+    background-color: #206fc0;
+    color: white;
+}
+
+.picture-cell .star-rating {
+    position: absolute;
+    bottom: 75px;
+    right:  0px;
+
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.star-rating p {
+    margin: 0;
+    color: #919191;
+}
+
+.star {
+    width:  14px;
+    height: 14px;
+
+    margin-right: 5px;
+    margin-bottom: 3px;
+
+    background: no-repeat url('assets/symbols/star-sprite.png');
+    background-size: 14px 42px;
+    cursor: pointer;
+}
+
+.star:hover {
+    background-position-y: -14px;
+}
+
+.star:active {
+    background-position-y: -28px;
+}
+
+.picture-cell a {
+    margin-left:  3px;
+    margin-right: 3px;
+    font-weight: bold;
+    font-size: 12px;
+
+    font-family: ceraproBold;
+}
+
+.picture-cell a:hover {
+    color: #919191;
+}
+
+.city-girl-cell span {
+    background: no-repeat url('assets/shapes/yellow-rectangle.png');
+    background-size: cover;
+}
+
+.spring-vibe-cell span {
+    background: no-repeat url('assets/shapes/geen-rectangle.png');
+    background-size: cover;
+}
+
+.tropical-passion-cell span {
+    background: no-repeat url('assets/shapes/yellow-rounded-rectangle.png');
+    background-size: cover;
+}
+
+.biker-girlfriend-cell span {
+    background: no-repeat url('assets/shapes/geen-rounded-rectangle.png');
+    background-size: cover;
+}
+
+/********** picture cell's clones **********/
+
+.city-girl-cell-clone:after, .spring-vibe-cell-clone:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: no-repeat url('assets/shapes/triangle.png');
+    display: block;
+    width:  21px;
+    height: 21px;
+}
+
+.biker-girlfriend-cell-clone:after, .tropical-passion-cell-clone:after {
+    content: " ";
+    position: absolute;
+    top:   30px;
+    right: -12.5px;
+    background: no-repeat url('assets/shapes/badge.png');
+    display: block;
+    width:  25px;
+    height: 25px;
+}
+
+.tropical-passion-cell-clone:before {
+    content: " ";
+    position: absolute;
+    top:    60px;
+    right: -12.5px;
+    background: no-repeat url('assets/shapes/fit-badge.png');
+    display: block;
+    width:  25px;
+    height: 25px;
+}
+
+/********** Third banner **********/
+
+.third-banner {
+    height: 400px;
+    background: no-repeat center url('assets/adidas-easter-celebration-special-footwear-collection.png');
+    background-size: cover;
+    padding: 20px 40px;
+    box-sizing: border-box;
+
+    color: white;
+
+    position: relative;
+}
+
+.third-banner h2 {
+    font-size: 60px;
+
+    line-height: 80px;
+
+    font-family: ceraproBlack;
+}
+
+.third-banner p {
+    position: absolute;
+    right:  40px;
+    bottom: 20px;
+    margin: 0;
+
+    font-size: 13px;
+
+    font-family: ceraproBold;
+}
+
+
+/********** fourth banner **********/
+
+.fourth-banner {
+    padding: 0;
+}
+
+.scrollable-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    margin: 15px auto;
+}
+
+.list-header {
+    min-width: 180px;
+    padding-left: 15px;
+    height: 100%;
+}
+
+.list-header p {
+    margin: 0;
+    color: grey;
+    font-size: 16px;
+
+    font-family: ceraproRegular;
+    font-style: italic;
+}
+
+.list-item {
+    display: inline-block;
+    min-width: 100px;
+    margin: 0 30px;
+    box-sizing: border-box;
+
+    font-weight: bold;
+    height: 50px;
+
+    font-family: ceraproMedium;
+}
+
+.list-item:hover {
+    text-decoration: none;
+}
+
+.list-item.active {
+    border-bottom: 4px solid #206fc0;
+}
+
+.list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+
+    line-height: 50px;
+    height: 50px;
+
+    width: 100%;
+}
+
+.list-controls {
+    min-width: 100px;
+}
+
+.list-controls div{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-left: 3px solid #efefef;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.arrow-left {
+    width:  10px;
+    height: 10px;
+
+    background: no-repeat url('assets/symbols/arrow-left.png');
+    background-size: 10px 20px;
+}
+
+.arrow-right {
+    width:  10px;
+    height: 10px;
+
+    background: no-repeat url('assets/symbols/arrow-right.png');
+    background-size: 10px 20px;
+}
+
+.list-controls div:hover {
+    background-color: lightgray;
+}
+
+.list-controls div:hover span {
+    background-position-y: -10px;
+}
+
+/********* Fifth banner **********/
+
+.fifth-banner {
+    max-width: 1230px;
+    margin: auto;
+}
+
+.fifth-banner .items-row {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-cell-wrapper {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+
+.item-cell {
+    margin: auto;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+    height: 360px;
+    max-width: 230px;
+    background-color: white;
+
+    text-align: center;
+}
+
+.item-cell-content {
+    position: relative;
+    height: 320px;
+    padding-top: 12px;
+    border-top: 3px solid white;
+}
+
+.item-cell h3 {
+    font-size: 13px;
+    margin-top:    0;
+    margin-bottom: 2px;
+
+    font-family: ceraproMedium;
+}
+
+.item-cell .item-info {
+    font-family: ceraproMedium;
+}
+
+.item-cell .img-wrapper {
+    height: 215px;
+    position: relative;
+}
+
+.item-cell img {
+    max-height: 215px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.item-cell small {
+    position: absolute;
+    bottom: 0;
+    left:   0;
+    right:  0;
+    display: block;
+    color: #ebebeb;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ebebeb;
+
+    font-family: ceraproRegular;
+    font-style: italic;
+}
+
+.item-cell .star {
+    position: absolute;
+    bottom: 4px;
+    right:  15px;
+    opacity: 0;
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.item-cell-content:hover{
+    border-top: 3px solid #206fc0;
+}
+
+.item-cell-content:hover .star {
+    opacity: 1;
+}
+
+.item-cell-content:active .star {
+    display: block;
+    background-position-y: -28px;
+}
+
+.item-cell .price {
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.5s 0s ease-in-out;
+
+    font-family: ceraproBold;
+}
+
+.ex-price {
+    color: #bdbcbc;
+    text-decoration: line-through;
+}
+
+.price:hover {
+    background-color: #206fc0;
+    color: white;
+}
+
+
+/********* Sixth banner **********/
+
+.sixth-banner {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1230px;
+
+    position: relative;
+
+    padding: 5px;
+
+    height: 400px;
+
+    background: no-repeat url('assets/noten-orange.png');
+    background-size: cover;
+}
+
+.sixth-banner h2 {
+    margin-left: 25px;
+    margin-top:  30px;
+    font-size:   60px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 80px;
+
+    font-family: ceraproBlack;
+}
+
+.sixth-banner p {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 40px;
+    right:  40px;
+    color: white;
+    margin: 0;
+
+    font-family: ceraproBold;
+}
+
+/********** Seventh banner ***********/
+
+.seventh-banner {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.seventh-banner .stylists {
+    padding-bottom: 40px;
+}
+
+.seventh-banner .stylists div{
+    margin-top: 20px;
+}
+
+.seventh-banner .stylist-info {
+    height:     450px;
+    max-width:  285px;
+    background-color: white;
+    margin: auto;
+
+    text-align: center;
+}
+
+.stylist-info {
+    font-family: ceraproMedium;
+}
+
+.stylist-info p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.stylist-info h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.stylist-info small {
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+.seventh-banner .stylist-info .stylist-links {
+    margin-top: 15px;
+}
+
+.stylist-info a {
+    display: block;
+    color: #206fc0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/********** Eights banner **********/
+
+.eighth-banner {
+    text-align: center;
+}
+
+.looks {
+    margin-top: 40px;
+}
+
+.looks a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+
+    font-family: ceraproBold;
+}
+
+.looks small {
+    display: block;
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+    font-family: ceraproRegular;
+}
+
+.look-wrapper {
+    margin-bottom: 25px;
+}
+
+.look-wrapper p {
+    margin-top: 5px;
+    font-family: ceraproRegular;
+}
+
+.looks-img-wrapper {
+    max-width: 285px;
+    margin: auto;
+}
+
+/****** Hype! ******/
+
+.looks .hype {
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+
+    color: #206fc0;
+
+    text-transform: uppercase;
+}
+
+.hype-1:before {
+    content: '873 Hype';
+}
+
+.hype-2:before {
+    content: '564 Hype';
+}
+
+.hype-3:before {
+    content: '450 Hype';
+}
+
+.hype-4:before {
+    content: '292 Hype';
+}
+
+.looks .hype:hover {
+    background-color: #206fc0;
+    color: white;
+}
+
+.looks .hype:hover:before{
+    content: "Hype!";
+}
+
+/****** Things ******/
+
+.things-wrapper {
+    margin: auto;
+
+    font-family: ceraproRegular;
+    font-style: italic;
+}
+
+.things-wrapper div{
+    margin: 5px 20px;
+    cursor: pointer;
+    position: relative;
+    color: #bdbdbd;
+    display: inline-block;
+}
+
+.things-wrapper div:hover {
+    opacity: 0.5;
+}
+
+.things-wrapper div:before {
+    width:  15px;
+    height: 15px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: -20px;
+}
+
+.zoom-thing:before {
+    background: no-repeat center url('assets/symbols/magnifying-glass.png');
+}
+
+.star-thing:before {
+    background: no-repeat center url('assets/symbols/star.png');
+}
+
+.share-thing:before {
+    background: no-repeat center url('assets/symbols/connection.png');
+}
+
+/****** Show More ******/
+.show-more {
+    text-decoration: underline;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+.dots {
+    line-height: 0;
+    padding: 1px;
+}
+
+.dots span {
+    width:  5px;
+    height: 5px;
+    background-color: #bdbdbd;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/********** Line **********/
+
+.line {
+    height: 5px;
+    background-color: white;
+    margin: 50px auto;
+}
+
+
+/********** Trinkets **********/
+
+.trinkets-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 370px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.trinkets-wrapper div {
+    width:  25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.trinkets-wrapper *:hover {
+    opacity: 0.5;
+}
+
+.trinkets-wrapper .facebook {
+    background: no-repeat center url(assets/trinkets/facebook.png);
+}
+
+.trinkets-wrapper .vk {
+    background: no-repeat center url(assets/trinkets/vk.png);
+}
+
+.trinkets-wrapper .insta {
+    background: no-repeat center url(assets/trinkets/insta.png);
+}
+
+.trinkets-wrapper .twitter {
+    background: no-repeat center url(assets/trinkets/twitter.png);
+}
+
+.trinkets-wrapper .pinterest {
+        background: no-repeat center url(assets/trinkets/pinterest.png);
+}
+
+.trinkets-wrapper .tumblr {
+    background: no-repeat center url(assets/trinkets/tumblr.png);
+}
+
+/***** Footer nav *****/
+
+.footer-nav {
+    max-width: 815px;
+    margin: auto;
+}
+
+.footer-nav a:hover {
+    background-color: white;
+}
+
+
+
+/********** Footer options ***********/
+
+.footer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-options * {
+    margin: 10px 20px;
+    text-decoration: underline;
+    color: #a7a6a6;
+    font-weight: 300;
+
+    font-family: ceraproRegular;
+}
+
+.footer-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top:    20px;
+    margin-bottom: 40px;
+}
+
+.footer-btns *:hover {
+    border-color: lightgray;
+}
+
+.btn-app-store,
+.btn-google-play {
+    width:  120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #e3e3e3;
+    background: none;
+    margin: 0 10px;
+    padding: 1px 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-google-play {
+}
+
+.trade-mark {
+    text-align: center;
+    font-weight: bold;
+
+    font-family: ceraproRegular;
+}
+
+.footer-btns .apple {
+    width:  22px;
+    height: 22px;
+    background: no-repeat center url('assets/symbols/apple.png');
+    margin-right: 3px;
+}
+
+.footer-btns .google {
+    width:  22px;
+    height: 22px;
+    background: no-repeat center url('assets/symbols/google.png');
+    margin-right: 3px;
+}
+
+.footer-btns-content {
+    color: #b8b8b8;
+}
+
+.footer-btns-content small {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: left;
+    display: block;
+}
+
+.footer-btns-content p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 10px;
+    margin-top: 1px;
+    text-align: left;
+}
+
+.footer-btns-content {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+/********** Media **********/
+
+
+
+
+
+/***** Medium ******/
+@media screen and (max-width: 1199px) {
+    .icons li {
+        margin-left: 25px;
+    }
+
+    /********** Third banner **********/
+
+    .third-banner h2 {
+        font-size: 50px;
+    }
+
+    /********* Fifth banner **********/
+    .item-cell-wrapper {
+        width: 25%;
+    }
+
+    /********** Sixth banner **********/
+
+    .sixth-banner h2 {
+        font-size: 50px;
+    }
+}
+
+/***** Smedium *****/
+@media screen and (max-width: 874px) {
+
+    .header-box .btns-wrapper {
+        position: relative;
+        right: initial;
+        top: initial;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .icons li {
+        margin-left: 0;
+    }
+
+    .container-fluid>.navbar-collapse {
+        padding: 0;
+    }
+
+    /********* Fifth banner **********/
+    .item-cell-wrapper {
+        width: 33.33333%;
+    }
+}
+
+/***** Small *****/
+@media screen and (max-width: 767px) {
+
+    .options {
+        margin: auto;
+        padding: 15px;
+    }
+
+    .options .search-icon {
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .another-nav, .options {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .another-nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .search-btn {
+        width: 100%;
+
+        padding: 15px;
+
+        box-sizing: border-box;
+    }
+
+    .search-icon {
+        margin: auto;
+        width: 100%;
+    }
+
+    .first-banner h2 {
+        margin-top: 50px;
+    }
+
+    /********** Third banner **********/
+
+    .third-banner {
+        padding: 20px 0;
+    }
+
+    .third-banner h2 {
+        font-size:   35px;
+        line-height: 45px;
+    }
+
+    /********* Fifth banner **********/
+    .item-cell-wrapper {
+        width: 50%;
+    }
+
+    /********** Sixth banner **********/
+
+    .sixth-banner h2 {
+        font-size:   35px;
+        line-height: 45px;
+    }
+}
+
+/***** X-small *****/
+@media screen and (max-width: 485px) {
+
+    /********* Fifth banner **********/
+    .item-cell-wrapper {
+        width: 100%;
+    }
+
+    /********** Sixth banner **********/
+    .sixth-banner p {
+        background-color: orange;
+    }
+}
